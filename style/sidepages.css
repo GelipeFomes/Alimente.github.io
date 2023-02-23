@@ -246,7 +246,18 @@ main .content {
 
 
 @media screen and (max-width: 700px) {
+    body {
+        overflow-x: hidden ;
+    }
+    main {
+        height: 200vh;
+        width: 100vw;
+        overflow-x: hidden ;
+    }
+
     main .marcelo {
+        height: 100vh;
+        width: 100vw;
         background-image: none;
 
         flex-direction: column;
@@ -255,42 +266,124 @@ main .content {
 
 
     }
-    .logo { 
+
+    .logo {
         width: 100%;
         height: 60%;
         display: flex;
         justify-content: flex-end;
-        align-items: center ;
+        align-items: center;
     }
+
     .logo img {
-        width: 500px;
+        width: 300px;
     }
+
     .logo p {
         width: 40%;
         height: 20%;
+        transform: translateX(200%);
     }
 
     .img {
         height: 40%;
-        
+
     }
+
     main .barbara {
         background-image: none;
 
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    } 
+    }
+
     main .barbara .logo {
         height: 50%;
 
     }
+    main .barbara .logo {
+        height: 50%;
+
+    }   
+    main .barbara .logo img{
+        transform: translateY(40%);
+    }
     main .barbara .img {
         height: 50%;
     }
+
     main .barbara .logo p {
         width: 50%;
     }
+    main .barbara .img img{
+        height: 120%;
+    }
 
+    main .content {
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    .cards {
+        margin-top: 20px;
+        width: 100%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card01,
+    .card02 {
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+        height: 70px;
+    }
+
+    .card01 img,
+    .card02 img {
+        width: 60%;
+    }
+
+    .card-left {
+        width: 100%;
+        height: 30vh;
+        font-size: 0.8rem;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-left .text {
+        width: 100vw;
+        height: 40%;
+
+    }
+
+    .card-right {
+        width: 100%;
+        height: 80vh;
+        font-size: 0.8rem;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card-right .text {
+        width: 100vw;
+        height: 40%;
+        margin-top: 40%;
+
+    }
+
+    .card02 {
+        transform: translateY(30%);
+    }
 }
