@@ -8,8 +8,10 @@
     --darker-pink: ;
     --light-gray: #EEEEEE;
 
-    --bg-main: url('/res/bg.png');
-    --bg-pros: url('/res/pros-bg.png');
+    --bg-main: url('./../res/bg.png');
+    --bg-pros: url('./../res/pros-bg.png');
+    --brain-bg: url('./../res/brain-bg.png');
+    --fruit-bg: url('../../res/fruit-bg.png')
 }
 
 html {
@@ -381,10 +383,11 @@ main .pros .card04 .title img {
     width: 35%;
 }
 
-main .pros .card03 .title img{
+main .pros .card03 .title img {
     width: 35%;
 
 }
+
 main .pros .card .content {
 
     height: 30%;
@@ -439,37 +442,56 @@ main .services {
     align-items: center;
 }
 
+
 main .services .service01,
 main .services .service02,
 main .services .service03 {
     margin: 3rem;
-    height: 30rem ;
-    width: 20rem;
+    width: 300px;
+    height: 471px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
-    background-color: #1F2B38;
-    border-radius: 20px;
+
+
+}
+
+main .services .service01,
+main .services .service02 {
+    background: var(--brain-bg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
     box-shadow: black 2px 2px 8px 0px;
+}
+
+main .services .service03 {
+    background: var(--fruit-bg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: black 2px 2px 8px 0px;
+
 }
 
 main .services div {
     color: white;
     text-align: center;
-
 }
 
 main .services .title {
     font-size: 1.5rem;
-    height: 8%;
+    height: 10%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
-main .services .title-name{
-    height: 8%;
+
+main .services .title-name {
+    height: 5%;
+    border-bottom: black 2px solid;
 }
 
 main .services .mid {
@@ -487,7 +509,6 @@ main .services .mid .min {
     font-size: 0.8rem;
     word-break: normal;
     height: 90%;
-    border-top: 2px solid var(--blue);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -495,9 +516,14 @@ main .services .mid .min {
 
 }
 
+main .service03 .title-name {
+    border-bottom: white 2px solid;
+}
+
 main .service03 .mid .min {
     font-size: 0.7rem;
     height: 100%;
+    width: 100%;
     margin: 10px;
     text-align: justify;
 }
@@ -532,13 +558,32 @@ main .services .icons a {
     font-size: 1.5rem;
     text-decoration: none;
 
-    color: var(--blue);
-    border: 2px solid var(--blue);
+    color: black;
+    border: 2px solid black;
 
     transition: ease;
     transition-duration: .2s;
 
 }
+
+main .services .service03 .icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 8px;
+
+    font-size: 1.5rem;
+    text-decoration: none;
+
+    color: white;
+    border: 2px solid white;
+
+    transition: ease;
+    transition-duration: .2s;
+}
+
 
 main .services .icons a:hover,
 main .services .icons a i:hover {
@@ -680,11 +725,6 @@ footer .down-info {
 
     }
 
-    main .services .service01,
-    main .services .service02 {
-        transform: scale(170%);
-        margin: 200px;
-    }
 
     footer {
         height: 25vh;
@@ -701,13 +741,13 @@ footer .down-info {
     }
 
     main {
-        height: 500vh;
+        height: 330vh;
         overflow-x: hidden;
     }
 
     main .landing {
 
-        height: 100vh;
+        height: 150vh;
         display: flex;
         flex-direction: column;
     }
@@ -718,7 +758,7 @@ footer .down-info {
     }
 
     main .landing .logo img {
-        margin-left: 0;
+        margin-right: 20%;
     }
 
     main .landing .right {
@@ -761,18 +801,103 @@ footer .down-info {
         width: 300px;
     }
 
-    .main .services {
-        flex-direction: column;
+    main .pros {
+        height: 100vh;
+    }
+
+    main .pros .Title {
+        font-size: 2rem;
+    }
+
+    main .pros .cards {
+        width: 100vw;
+        justify-content: center;
+        overflow-y: hidden;
+    }
+
+    main .pros .card {
+        min-width: 200px;
+        max-width: 200px;
+        height: 270px;
+
+    }
+
+    main .pros .cards {
+
+        width: 100vw;
+    }
+
+    main .pros .card .content p {
+        font-size: 0.7rem;
+    }
+
+    main .services {
         width: 100%;
-        height: 30vh;
+        height: 70vh;
         margin-top: 0.7%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .main .services .service03 {
-        height: 30vh;
+
+    main .services .service01,
+    main .services .service02,
+    main .services .service03 {
+
+        width: 150px;
+        height: 150px;
+
+        font-size: 0.3rem;
+        margin: 10px;
 
     }
 
+    main .services .title {
+        font-size: 1rem;
+        height: 30%;
+    }
+
+    main .services .title-name {
+        font-size: 0.65rem;
+        border-bottom: none;
+    }
+
+    main .services .mid {
+        height: 50%;
+    }
+
+    main .services .mid .min {
+        display: none;
+    }
+
+    main .services .mid .max {
+        margin-top: 30px;
+        height: 50%;
+        font-size: 0.8rem;
+        border: none;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    main .services .icons {
+        height: 30%;
+    }
+
+    main .services .icons a {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    main .services .service03 .icons a {
+        padding: 8px;
+        font-size: 15px;
+    }
+
+    main .services .icons #mail {
+        display: none;
+    }
+
+    main .services .service03 .title {
+        font-size: 0.8rem;
+    }
 }
