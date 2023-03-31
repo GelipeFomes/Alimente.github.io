@@ -107,6 +107,10 @@ main .marcelo {
     display: flex;
 
 }
+main .marcelo .img img {
+    width: 100%;
+    filter: drop-shadow(10px 10px 10px 10px #000);
+}
 
 main .ingrid {
     width: 100%;
@@ -173,9 +177,9 @@ main .barbara .logo img {
 }
 
 main .content {
-    height: 45%;
+    height: 160vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -184,7 +188,7 @@ main .content {
 
 .cards {
     width: 80%;
-    height: 85%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -194,9 +198,10 @@ main .content {
 .card-left {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    font-size: 0.95rem;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: clamp(8px, 10vw, 25px);
 
 }
 
@@ -211,8 +216,10 @@ main .content {
 .card-right {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    
+    font-size: clamp(8px, 10vw, 25px);
 }
 
 
@@ -244,6 +251,33 @@ main .content {
     width: 160px;
 }
 
+.content .gallery {
+    height: 50%;
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.content .gallery .photo
+{
+    width: 30%;
+    background-color: var(--darker-blue);
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .gallery .photo img {
+    width: 92%;
+    height: 95%;
+}
+
+.content .gallery .photo img
+{
+    object-fit: cover;
+}
 
 @media screen and (max-width: 700px) {
     body {
