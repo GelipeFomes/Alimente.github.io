@@ -71,6 +71,8 @@ header li a {
     color: white;
     transition: all;
     transition-duration: 0.5s;
+    text-shadow: 1px 0 var(--darker-blue), -1px 0 var(--darker-blue), 0 1px var(--darker-blue), 0 -1px var(--darker-blue),
+1px 1px var(--darker-blue), -1px -1px var(--darker-blue), 1px -1px var(--darker-blue), -1px 1px var(--darker-blue);
 }
 
 header li a:hover {
@@ -109,7 +111,7 @@ main .marcelo {
 }
 main .marcelo .img img {
     width: 100%;
-    filter: drop-shadow(10px 10px 10px 10px #000);
+    filter: drop-shadow(10px 10px 10px 10px var(--darker-blue));
 }
 
 main .ingrid {
