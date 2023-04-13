@@ -278,7 +278,7 @@ main .content {
 {
     object-fit: cover;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
     .card-left, .card-right {
         font-size: clamp(5px, 6vw, 20px);
     }
