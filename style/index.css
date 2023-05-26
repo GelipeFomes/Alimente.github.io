@@ -614,17 +614,15 @@ footer {
     height: 18rem;
     background: var(--darker-blue);
     box-shadow: -1px 0px 5px 0px black;
+    display: flex;
 
-}
-
-footer .top-info {
-    height: 45%;
 }
 
 footer .icons {
-    width: 100%;
-    height: 10%;
+    width: 10%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -639,10 +637,6 @@ footer .icons a {
 footer .icons a:hover {
     color: white;
 
-}
-
-footer .down-info {
-    height: 45%;
 }
 
 
@@ -678,6 +672,39 @@ footer .down-info {
 
 }
 
+.parceiros {
+
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.parceiros .pharma {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+}
+
+.parceiros .pharma img {
+    width: 90%;
+}
+
+.outros-parceiros {
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.parceiros .outros-parceiros img {
+
+    width: 40%;
+
+}
 
 @media screen and (min-width: 1600px) {
 
@@ -909,6 +936,73 @@ footer .down-info {
     main .services .service03 .title {
         font-size: 0.8rem;
     }
+
+    .parceiros {
+
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .parceiros .pharma {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .parceiros .pharma img {
+        width: 80%;
+    }
+
+    .outros-parceiros {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .parceiros .outros-parceiros img {
+
+        width: 30%;
+
+    }
+    footer {
+
+        width: 100%;
+        height: 17rem;
+        background: var(--darker-blue);
+        box-shadow: -1px 0px 5px 0px black;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    footer .icons {
+        width: 100%;
+        height: 8%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .icons a {
+        color: var(--blue);
+        margin: 8px;
+        font-size: 1.2rem;
+        transition: .4s;
+    }
+    
+    footer .icons a:hover {
+        color: white;
+    
+    }
+    
+    
 }
 
 @media screen and (max-width: 470px) {
@@ -933,6 +1027,7 @@ footer .down-info {
         margin: 10px;
 
     }
+
     main .pros {
         background-size: 150%;
     }
